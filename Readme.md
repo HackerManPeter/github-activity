@@ -68,7 +68,7 @@ Recent GitHub Activity for kamranahmedse:
 
 You can configure the application using the following environment variables:
 
-- `GITHUB_AUTH_TOKEN`: Your GitHub personal access token (optional, increases API rate limits)
+- `GITHUB_TOKEN`: Your GitHub personal access token (optional, increases API rate limits)
 - `ACTIVITY_LIMIT`: Number of activities to display (default: 10)
 
 Example:
