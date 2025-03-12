@@ -23,7 +23,7 @@ go install github.com/hackermanpeter/github-activity@latest
 
 Download the pre-compiled binary for your platform:
 
-1. Go to the [releases page](https://github.com/yourusername/github-activity/releases)
+1. Go to the [releases page](https://github.com/hackermanpeter/github-activity/releases)
 2. Download the binary for your operating system (Windows, macOS, Linux)
 3. Extract and add to your PATH
 
