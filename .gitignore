@@ -29,3 +29,6 @@ go.work
 
 .vscode
 .env
+
+# Added by goreleaser init:
+dist/
