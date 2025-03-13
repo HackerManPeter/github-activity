@@ -7,8 +7,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/hackermanpeter/github-activity/config"
-	"github.com/hackermanpeter/github-activity/internal"
+	"github.com/HackerManPeter/github-activity/config"
+	"github.com/HackerManPeter/github-activity/internal"
 )
 
 var conf = config.New()

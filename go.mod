@@ -1,4 +1,4 @@
-module github.com/hackermanpeter/github-activity
+module github.com/HackerManPeter/github-activity
 
 go 1.23.4
 
