@@ -17,14 +17,14 @@ A simple command-line tool that fetches and displays the recent activity of any 
 If you have Go installed, you can install directly from the source:
 
 ```bash
-go install github.com/hackermanpeter/github-activity@latest
+go install github.com/HackerManPeter/github-activity@latest
 ```
 
 ### Option 2: Binary Download
 
 Download the pre-compiled binary for your platform:
 
-1. Go to the [releases page](https://github.com/hackermanpeter/github-activity/releases)
+1. Go to the [releases page](https://github.com/HackerManPeter/github-activity/releases)
 2. Download the binary for your operating system (Windows, macOS, Linux)
 3. Extract and add to your PATH
 
@@ -32,7 +32,7 @@ Download the pre-compiled binary for your platform:
 
 ```bash
 # Clone the repository
-git clone https://github.com/hackermanpeter/github-activity.git
+git clone https://github.com/HackerManPeter/github-activity.git
 
 # Navigate to the project directory
 cd github-activity
