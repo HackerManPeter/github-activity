@@ -31,7 +31,7 @@ Download the pre-compiled binary for your platform:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/github-activity.git
+git clone https://github.com/hackermanpeter/github-activity.git
 
 # Navigate to the project directory
 cd github-activity
@@ -68,14 +68,12 @@ Recent GitHub Activity for kamranahmedse:
 
 You can configure the application using the following environment variables:
 
-- `GITHUB_TOKEN`: Your GitHub personal access token (optional, increases API rate limits)
-- `ACTIVITY_LIMIT`: Number of activities to display (default: 10)
+- `GITHUB_AUTH_TOKEN`: Your GitHub personal access token (optional, increases API rate limits)
 
 Example:
 
 ```bash
-export GITHUB_TOKEN=your_personal_access_token
-export ACTIVITY_LIMIT=20
+export GITHUB_AUTH_TOKEN=your_personal_access_token
 github-activity kamranahmedse
 ```
 
@@ -84,14 +82,11 @@ github-activity kamranahmedse
 - 🚧 Activity filtering by type (commits, issues, PRs, etc.)
 - 🚧 Time-based filtering (last day, week, month)
 - 🚧 Interactive mode with paging and detailed views
-- 🚧 Custom output formatting (JSON, CSV)
-- 🚧 Watch mode to monitor activity in real-time
-- 🚧 Support for organization activity
 - 🚧 Activity statistics and summaries
 
 ## Technical Details
 
-This tool uses the GitHub REST API v3 to fetch user events. By default, it works without authentication but has limited API rate. For increased limits, you can provide a GitHub personal access token through the `GITHUB_TOKEN` environment variable.
+This tool uses the GitHub REST API v3 to fetch user events. By default, it works without authentication but has limited API rate. For increased limits, you can provide a GitHub personal access token through the `GITHUB_AUTH_TOKEN` environment variable.
 
 ## Contributing
 
