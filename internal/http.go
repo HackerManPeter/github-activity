@@ -41,8 +41,8 @@ type GithubResponse struct {
 	} `json:"org"`
 }
 
-func BuildRequest(ctx context.Context, config *config.Config, username string) *http.Request {
-	endpoint := fmt.Sprintf("https://api.github.com/users/%s/events?", username)
+func BuildRequest(ctx context.Context, config *config.Config, a *Arguments) *http.Request {
+	endpoint := fmt.Sprintf("https://api.github.com/users/%s/events?per_page=%v", a.Username, a.Limit)
 	req, err := http.NewRequestWithContext(ctx, http.MethodGet, endpoint, nil)
 	if err != nil {
 		panic("unable to make request")
