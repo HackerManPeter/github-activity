@@ -69,12 +69,12 @@ Recent GitHub Activity for kamranahmedse:
 
 You can configure the application using the following environment variables:
 
-- `GITHUB_AUTH_TOKEN`: Your GitHub personal access token (optional, increases API rate limits)
+- `GITHUB_TOKEN`: Your GitHub personal access token (optional, increases API rate limits)
 
 Example:
 
 ```bash
-export GITHUB_AUTH_TOKEN=your_personal_access_token
+export GITHUB_TOKEN=your_personal_access_token
 github-activity kamranahmedse
 ```
 
@@ -87,7 +87,7 @@ github-activity kamranahmedse
 
 ## Technical Details
 
-This tool uses the GitHub REST API v3 to fetch user events. By default, it works without authentication but has limited API rate. For increased limits, you can provide a GitHub personal access token through the `GITHUB_AUTH_TOKEN` environment variable.
+This tool uses the GitHub REST API v3 to fetch user events. By default, it works without authentication but has limited API rate. For increased limits, you can provide a GitHub personal access token through the `GITHUB_TOKEN` environment variable.
 
 ## Contributing
 
