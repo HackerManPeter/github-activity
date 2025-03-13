@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/HackerManPeter/github-activity/config"
+	"github.com/hackermanpeter/github-activity/config"
 )
 
 var Client = &http.Client{
