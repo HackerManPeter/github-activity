@@ -1,7 +1,9 @@
 package config
 
 import (
+	"errors"
 	"fmt"
+	"os"
 
 	"github.com/spf13/viper"
 )
@@ -11,14 +13,30 @@ type Config struct {
 }
 
 func New() *Config {
-	viper.SetConfigFile(".env")
-	err := viper.ReadInConfig()
-	if err != nil {
-		panic(fmt.Errorf("fatal error config file: %w", err))
+	var githubToken string
+
+	if _, err := os.Stat(".env"); errors.Is(err, os.ErrNotExist) {
+		githubToken = os.Getenv("GITHUB_TOKEN")
+	} else {
+		viper.SetConfigFile(".env")
+
+		err := viper.ReadInConfig()
+		if err != nil {
+			fmt.Printf("fatal error config file: %v", err)
+			os.Exit(1)
+		}
+
+		githubToken = viper.GetString("GITHUB_TOKEN")
+
+	}
+
+	if githubToken == "" {
+		fmt.Printf("Set GITHUB_TOKEN as an environment variable")
+		os.Exit(1)
 	}
 
 	return &Config{
-		GithubToken: viper.GetString("GITHUB_AUTH_TOKEN"),
+		GithubToken: githubToken,
 	}
 
 }
